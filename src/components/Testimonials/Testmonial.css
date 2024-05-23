@@ -1,0 +1,19 @@
+.testimonial {
+  margin: 80px auto;
+  padding: 0 80px;
+  position: relative;
+}
+.next-btn,
+.prev-btn {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  transform: translateY(-50%);
+  padding: 15px;
+  width: 100px;
+  cursor: pointer;
+}
+.prev-btn {
+  right: auto;
+  left: 0;
+}
