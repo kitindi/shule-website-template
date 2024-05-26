@@ -18,11 +18,12 @@
   flex-basis: 51%;
 }
 .play-icon {
-  width: 80px;
+  width: 50px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 .about h3 {
   font-weight: 600;

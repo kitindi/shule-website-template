@@ -3,12 +3,13 @@ import "./About.css";
 import playIcon from "../../assets/playicon.png";
 import about from "../../assets/about.jpg";
 
-const About = () => {
+// eslint-disable-next-line react/prop-types
+const About = ({ setPlayState }) => {
   return (
     <div className="about">
       <div className="about-left">
         <img src={about} alt="" className="about-img" />
-        <img src={playIcon} alt="" className="play-icon" />
+        <img src={playIcon} alt="" className="play-icon" onClick={() => setPlayState(true)} />
       </div>
       <div className="about-right">
         <h3>ABOUT GOLDEN TRUST SCHOOLS</h3>
