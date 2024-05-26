@@ -26,3 +26,17 @@ nav ul li {
   background: #212ea0;
   transition: 0.5s;
 }
+
+/* Media queries */
+
+@media (max-width: 1000px) {
+  ul li {
+    margin: 10px 15px;
+  }
+}
+
+@media (max-width: 840px) {
+  ul li {
+    margin: 10px 15px;
+  }
+}

@@ -1,0 +1,15 @@
+.footer {
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+  max-width: 90%;
+  border-top: 1px solid #797979;
+  font-size: 12px;
+}
+.footer ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 20px;
+}

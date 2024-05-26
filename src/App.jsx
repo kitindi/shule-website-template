@@ -7,6 +7,8 @@ import Title from "./components/Title/Title";
 import About from "./components/About/About";
 import Schoollife from "./components/SchoolLife/Schoollife";
 import Testimonial from "./components/Testimonials/Testimonial";
+import Contact from "./components/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   return (
@@ -19,8 +21,11 @@ const App = () => {
         <About />
         <Title subtitle="Gallary" title="School Life" />
         <Schoollife />
-        <Title subtitle="TESTIMONIALS" title="What Student Says" />
+        <Title subtitle="TESTIMONIALS" title="What Parents Says" />
         <Testimonial />
+        <Title subtitle="Contact Us" title="Get in Touch" />
+        <Contact />
+        <Footer />
       </div>
     </div>
   );
