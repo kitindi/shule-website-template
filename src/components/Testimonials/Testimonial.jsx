@@ -24,7 +24,7 @@ const Testimonial = () => {
   };
 
   return (
-    <div className="testimonial">
+    <div className="testimonials">
       <span className="next-btn" onClick={sildeForward}>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" color="#fff" fill="#212ea0">
           <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />

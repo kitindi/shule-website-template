@@ -12,10 +12,16 @@ const Navbar = () => {
       window.scrollY > 50 ? setSticky(true) : setSticky(false);
     });
   }, []);
+
+  const [mobileMenu, setMobileMenu] = useState(false);
+  const toggleMenu = () => {
+    setMobileMenu(!mobileMenu);
+  };
+
   return (
     <nav className={`container ${sticky ? "dark-nav" : ""}`}>
       <h1 className="logo">Golden Trust Schools</h1>
-      <ul>
+      <ul className={mobileMenu ? "" : "hide-mobile-menu"}>
         <li>
           <Link to="hero" smooth={true} offset={0} duration={500}>
             Home
@@ -42,13 +48,13 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="contact" smooth={true} offset={-260} duration={500}>
-            <button className="btn">Contact Us</button>
+          <Link to="contact" smooth={true} offset={-260} duration={700}>
+            <button className="btn contact-btn">Contact Us</button>
           </Link>
         </li>
       </ul>
       <div>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" color="#9b9b9b" fill="none">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" color="#fff" fill="none" className="menu-icon" onClick={toggleMenu}>
           <path d="M4 5L16 5" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
           <path d="M4 12L20 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
           <path d="M4 19L12 19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />

@@ -13,3 +13,13 @@
   display: inline-block;
   margin-left: 20px;
 }
+
+@media (max-width: 860px) {
+  .footer {
+    display: block;
+  }
+  .footer ul li {
+    margin: 10px 0px;
+    padding-right: 20px;
+  }
+}

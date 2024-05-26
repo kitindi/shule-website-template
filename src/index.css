@@ -46,6 +46,10 @@ a {
     padding-right: 5%;
   }
   .btn {
-    padding: 14px 22px;
+    padding: 12px 22px;
+  }
+  .contact-btn {
+    font-size: 12px;
+    font-weight: 600;
   }
 }
